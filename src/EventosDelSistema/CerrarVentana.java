@@ -9,7 +9,6 @@ public class CerrarVentana implements ActionListener
 	{
 		System.exit(0);// TODO Auto-generated constructor stub
 	}
-
 	@Override
 	public void actionPerformed(ActionEvent e)
 	{
