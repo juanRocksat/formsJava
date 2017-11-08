@@ -12,5 +12,4 @@ public class Login extends JFrame
 		// TODO Auto-generated method stub
 
 	}
-
 }
