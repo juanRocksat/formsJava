@@ -2,6 +2,7 @@ package login;
 
 import java.awt.Color;
 import java.awt.TextField;
+import java.awt.color.CMMException;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
@@ -13,8 +14,9 @@ import javax.swing.JOptionPane;
 import javax.swing.JPasswordField;
 
 import EventosDelSistema.CerrarVentana;
+import conversion.Conversion;
 
-public class Login extends JFrame implements ActionListener , Action
+public class Login extends JFrame implements ActionListener , Action,Conversion
 {
 	public JLabel labelUser = new JLabel("user : ");
 	public JLabel labelPass = new JLabel("Pass : ");
@@ -25,8 +27,8 @@ public class Login extends JFrame implements ActionListener , Action
 	JButton loggear	= new JButton("Loggear");
 	JButton salir = new JButton("!Salir!");
 	JPasswordField  pass2 = new JPasswordField();
-	Integer [] posisionBotonLoggear={30,20};  
-	Integer [] posisionBotonSalir={30,50}; 
+	Integer [] posisionBotonLoggear={15,13};  
+	Integer [] posisionBotonSalir={15,15}; 
 	public Login()
 	{
 		setLayout(null);
@@ -37,9 +39,9 @@ public class Login extends JFrame implements ActionListener , Action
 	private void configurarBotones()
 	{
 		loggear.setCursor(getCursor());
-		loggear.setBounds(posisionBotonLoggear[0],posisionBotonLoggear[1],10,10);
+		loggear.setBounds(posisionBotonLoggear[0],posisionBotonLoggear[1],4,1);
 		salir.setBackground(Color.RED);
-		salir.setBounds(posisionBotonSalir[0],posisionBotonSalir[1],10,10);
+		salir.setBounds(cmToPixel(posisionBotonSalir[0]),cmToPixel(posisionBotonSalir[1]),cmToPixel(5),cmToPixel(1));
 		add(loggear);add(salir);
 		loggear.addActionListener(this);
 		salir.addActionListener(this);
@@ -47,8 +49,8 @@ public class Login extends JFrame implements ActionListener , Action
 	private void configurarCamposDeTexto()
 	{
 		add(user);add(pass);
-		user.setBounds(20,30,50,15);
-		pass.setBounds(20,40,50,15);
+		user.setBounds(cmToPixel(10),cmToPixel(10),cmToPixel(10),cmToPixel(1));
+		pass.setBounds(cmToPixel(10),cmToPixel(11),cmToPixel(10),cmToPixel(1));
 	}
 	private void configurarLabels()
 	{
@@ -62,7 +64,7 @@ public class Login extends JFrame implements ActionListener , Action
 	private void mostrarLogin()
 	{
 		setearColores();
-		setSize(500,500);
+		setSize(cmToPixel(30),cmToPixel(30));
 		setTitle(titulo_de_ventana);
 		setVisible(true);
 		configurarBotones();
