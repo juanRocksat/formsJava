@@ -1,15 +1,15 @@
-package tabla;
+package tabla_borrador;
 import javax.swing.*;
 
 /**
  * Crea la vista, el modelo y el control del ejemplo de uso de la tabla.
  * Hereda de JFrame.
  */
-public class PrincipalTabla extends JFrame
+public class AppletTable extends JApplet
 {
     
     /** Creates a new instance of PrincipalTabla */
-    public PrincipalTabla() 
+    public void init() 
     {
         // Crea el modelo
         ModeloTabla2 modelo = new ModeloTabla2();
@@ -19,19 +19,5 @@ public class PrincipalTabla extends JFrame
         
         // Crea la vista, pasándole el control
         this.getContentPane().add (new PanelCompleto(modelo, control));
-        
-        // Hace que la ventana sea visible.
-        this.pack();
-        this.setVisible(true);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-    
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) 
-    {
-        new PrincipalTabla();
-    }
-    
 }

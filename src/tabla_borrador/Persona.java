@@ -1,4 +1,4 @@
-package tabla;
+package tabla_borrador;
 /**
  * Contiene los datos de una persona: nombre, apellido y edad.
  * Cada fila de la tabla será una persona y tendrá tres columnas,

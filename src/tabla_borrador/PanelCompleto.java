@@ -5,7 +5,7 @@
  *
  * Ejemplo de manejo de JTable y TableModel
  */
-package tabla;
+package tabla_borrador;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;

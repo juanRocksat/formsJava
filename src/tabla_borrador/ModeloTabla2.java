@@ -1,4 +1,4 @@
-package tabla;
+package tabla_borrador;
 import javax.swing.table.*;
 import javax.swing.event.*;
 import java.util.LinkedList;

@@ -1,4 +1,4 @@
-package tabla;
+package tabla_borrador;
 public class ControlTabla
  {
      /**

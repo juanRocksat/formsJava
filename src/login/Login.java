@@ -5,6 +5,7 @@ import java.awt.TextField;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.Action;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
@@ -12,7 +13,7 @@ import javax.swing.JPasswordField;
 
 import EventosDelSistema.CerrarVentana;
 
-public class Login extends JFrame implements ActionListener
+public class Login extends JFrame implements ActionListener , Action
 {
 	public String titulo_de_ventana = new String("iniciar sesion ");
 	public Color  color_de_fondo  ;
@@ -75,6 +76,18 @@ public class Login extends JFrame implements ActionListener
 	}
 	@Override
 	public void actionPerformed(ActionEvent e)
+	{
+		// TODO Auto-generated method stub
+		
+	}
+	@Override
+	public Object getValue(String key)
+	{
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
+	public void putValue(String key, Object value)
 	{
 		// TODO Auto-generated method stub
 		
