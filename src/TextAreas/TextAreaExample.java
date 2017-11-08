@@ -6,6 +6,9 @@ import javax.swing.JTextArea;
 import javax.swing.UIManager;
 
 public class TextAreaExample {
+	 static String content = "Here men from the planet Earth\n"
+		      + "first set foot upon the Moon,\n" + "July 1969, AD.\n"
+		      + "We came in peace for all mankind.";
   public static void main(String[] args) {
     JFrame f = new JFrame("Text Area Examples");
     JPanel upperPanel = new JPanel();
@@ -31,7 +34,5 @@ public class TextAreaExample {
     f.setVisible(true);
   }
 
-  static String content = "Here men from the planet Earth\n"
-      + "first set foot upon the Moon,\n" + "July 1969, AD.\n"
-      + "We came in peace for all mankind.";
+ 
 }

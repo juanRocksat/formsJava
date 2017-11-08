@@ -34,7 +34,7 @@ public class Ventana2 extends JFrame
          constraints.gridwidth = 2;
          constraints.gridheight = 2;
 	 // Hay que estirar la fila 0.
-         constraints.weighty = 1.0;
+         constraints.weighty = 2.0;
          this.getContentPane().add (cajaTexto, constraints);
 	 // Restauramos el valor de weighty para no afectar a los siguientes
 	 // componentes.
@@ -89,6 +89,13 @@ public class Ventana2 extends JFrame
          this.getContentPane().add (campoTexto, constraints);
 	 // No restauramos nada, puesto que hemos acabado el código. Lo
 	 // pagaremos caro el día que pongamos más componentes aquí detrás
-	 // en la misma ventana.
+	 // en la misma ventana
+         setSize(500,500);
+         setVisible(true);
      }
+     public static void main(String[] args)
+	{
+		new Ventana2();
+		
+	}
 }
