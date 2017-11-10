@@ -52,7 +52,6 @@ public class Login2 extends JFrame implements ActionListener {
         this.add(caja);
         this.add(boton);
     }
-
     @Override
     public void actionPerformed(ActionEvent e) {
         String nombre = caja.getText();                                 // obtenemos el contenido de la caja de texto

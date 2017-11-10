@@ -80,7 +80,7 @@ public class Login extends JFrame implements ActionListener , Action,Conversion
 //	{
 //		salir.setBounds(0,0,posisionBotonSalir[0],posisionBotonSalir[1]);
 //	}
-	private Boolean verificarContraseña()
+	private Boolean verificarContrasenia()
 	{
 		return pass.getText()=="1234" || pass2.getText()=="1234"?true : mostrarQueIngreseDeVuelta();
 	}
@@ -99,7 +99,7 @@ public class Login extends JFrame implements ActionListener , Action,Conversion
 	public void actionPerformed(ActionEvent e)
 	{
 		// TODO Auto-generated method stub	
-		verificarContraseña();
+		verificarContrasenia();
 	}
 	@Override
 	public Object getValue(String key)
